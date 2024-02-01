@@ -11,9 +11,6 @@ public class UserDaoJDBCImpl implements UserDao {
 
     private Connection connection; // Поле для хранения соединения
 
-    public UserDaoJDBCImpl() {
-        this.connection = Util.getConnection();
-    }
 
     public void createUsersTable() {
         String sql = """
